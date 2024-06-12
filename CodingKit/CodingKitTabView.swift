@@ -22,6 +22,7 @@ struct CodingKitTabView: View {
                     Text("Profile")
                 }
         }
+        .tint(Color("tabIcon"))
     }
 }
 
