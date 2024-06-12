@@ -10,7 +10,10 @@ import SwiftUI
 
 struct MenuPageView: View {
     var body: some View {
-        Text("Menu Page")
+        NavigationView {
+            Text("Menu Page")
+                .navigationTitle("CodingKit")
+        }
     }
 }
 
