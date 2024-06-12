@@ -10,7 +10,11 @@ import SwiftUI
 struct MenuPage: View {
     var body: some View {
         TabView {
-            Text("Menu Page")
+            ProfilePage()
+                .tabItem {
+                    Image(systemName: "person.crop.circle")
+                    Text("Profile")
+                }
         }
     }
 }
