@@ -7,10 +7,16 @@
 
 import SwiftUI
 
-struct MenuPage: View {
+struct CodingKitTabView: View {
     var body: some View {
         TabView {
-            ProfilePage()
+            MenuPageView()
+                .tabItem {
+                    Image(systemName: "house.circle")
+                    Text("Home")
+                }
+
+            ProfilePageView()
                 .tabItem {
                     Image(systemName: "person.crop.circle")
                     Text("Profile")
@@ -20,5 +26,5 @@ struct MenuPage: View {
 }
 
 #Preview {
-    MenuPage()
+    CodingKitTabView()
 }

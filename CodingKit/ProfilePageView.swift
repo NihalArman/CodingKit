@@ -8,12 +8,12 @@
 import Foundation
 import SwiftUI
 
-struct ProfilePage: View {
+struct ProfilePageView: View {
     var body: some View {
         Text("Profile Page")
     }
 }
 
 #Preview {
-    ProfilePage()
+    ProfilePageView()
 }
