@@ -25,10 +25,13 @@ struct LoginView: View {
                      text: $password
                  )
                  .disableAutocorrection(true)
-                Button("Sign In", action: {})
-                Button("Register", action: {})
+
+                HStack {
+                    Button("Sign In", action: {})
+                    Button("Register", action: {})
+                }
+                .buttonStyle(.bordered)
              }
-            .buttonStyle(.bordered)
             .textFieldStyle(.roundedBorder)
             .navigationTitle("Sign in or Register")
         }
