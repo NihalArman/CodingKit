@@ -16,6 +16,7 @@
 		8314622D2C19F91D00900CB3 /* CodingKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314622C2C19F91D00900CB3 /* CodingKitUITestsLaunchTests.swift */; };
 		8314623A2C1A14D300900CB3 /* ProfilePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831462392C1A14D300900CB3 /* ProfilePageView.swift */; };
 		8314623C2C1A17D200900CB3 /* MenuPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314623B2C1A17D200900CB3 /* MenuPageView.swift */; };
+		8314623E2C1AE54300900CB3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314623D2C1AE54300900CB3 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		8314622C2C19F91D00900CB3 /* CodingKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		831462392C1A14D300900CB3 /* ProfilePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageView.swift; sourceTree = "<group>"; };
 		8314623B2C1A17D200900CB3 /* MenuPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPageView.swift; sourceTree = "<group>"; };
+		8314623D2C1AE54300900CB3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				831462152C19F91D00900CB3 /* Preview Content */,
 				831462392C1A14D300900CB3 /* ProfilePageView.swift */,
 				8314623B2C1A17D200900CB3 /* MenuPageView.swift */,
+				8314623D2C1AE54300900CB3 /* LoginView.swift */,
 			);
 			path = CodingKit;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				8314623A2C1A14D300900CB3 /* ProfilePageView.swift in Sources */,
 				831462112C19F91A00900CB3 /* CodingKitTabView.swift in Sources */,
 				8314620F2C19F91A00900CB3 /* CodingKitApp.swift in Sources */,
+				8314623E2C1AE54300900CB3 /* LoginView.swift in Sources */,
 				8314623C2C1A17D200900CB3 /* MenuPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
