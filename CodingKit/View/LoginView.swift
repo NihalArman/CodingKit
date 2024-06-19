@@ -14,7 +14,7 @@ struct LoginView: View {
     @State private var isLoggedIn: Bool = false
 
     var body: some View {
-        NavigationView {
+        if !isLoggedIn {
             VStack {
                 TextField(
                     "User Name",
@@ -35,10 +35,11 @@ struct LoginView: View {
                 .buttonStyle(.bordered)
             }
             .textFieldStyle(.roundedBorder)
-            .navigationTitle("Sign in or Register")
+        } else {
+            CodingKitTabView()
         }
     }
-    
+
     private func userSignIn() {
         isLoggedIn.toggle()
     }
