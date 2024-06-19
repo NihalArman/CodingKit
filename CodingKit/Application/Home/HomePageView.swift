@@ -11,8 +11,10 @@ import SwiftUI
 struct HomePageView: View {
     var body: some View {
         NavigationView {
-            Text("Home Page")
-                .navigationTitle("CodingKit")
+            List(HomePageItems.items, id: \.id) { item in
+                Text(item.name)
+            }
+            .navigationTitle("CodingKit")
         }
     }
 }
