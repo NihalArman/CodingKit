@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct HomePageItemModel {
+struct HomePageItemModel: Identifiable {
     let id: Int
     let name: String
     let iconName: String
