@@ -11,7 +11,7 @@ import SwiftUI
 struct CodingKitApp: App {
     var body: some Scene {
         WindowGroup {
-            CodingKitTabView()
+            LoginView()
         }
     }
 }
