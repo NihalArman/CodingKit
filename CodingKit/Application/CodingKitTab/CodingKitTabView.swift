@@ -10,7 +10,7 @@ import SwiftUI
 struct CodingKitTabView: View {
     var body: some View {
         TabView {
-            MenuPageView()
+            HomePageView()
                 .tabItem {
                     Image(systemName: "house.circle")
                     Text("Home")

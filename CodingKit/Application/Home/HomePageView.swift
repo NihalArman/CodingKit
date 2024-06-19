@@ -8,15 +8,15 @@
 import Foundation
 import SwiftUI
 
-struct MenuPageView: View {
+struct HomePageView: View {
     var body: some View {
         NavigationView {
-            Text("Menu Page")
+            Text("Home Page")
                 .navigationTitle("CodingKit")
         }
     }
 }
 
 #Preview {
-    MenuPageView()
+    HomePageView()
 }
