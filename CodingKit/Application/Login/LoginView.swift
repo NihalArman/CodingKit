@@ -9,30 +9,30 @@ import Foundation
 import SwiftUI
 
 struct LoginView: View {
-    @State private var userName: String = ""
-    @State private var password: String = ""
-    @State private var isLoggedIn: Bool = false
+    @StateObject var viewModel = LoginViewModel()
 
     var body: some View {
-        if !isLoggedIn {
+        if !viewModel.isLoggedIn {
             VStack {
                 Text("Login")
                     .font(.title)
+
                 TextField(
                     "User Name",
-                    text: $userName
+                    text: $viewModel.userName
                 )
                 .disableAutocorrection(true)
+
                 SecureField(
                     "Password",
-                    text: $password
+                    text: $viewModel.password
                 )
                 .disableAutocorrection(true)
 
                 HStack {
-                    Button("Sign In", action: userSignIn)
+                    Button("Sign In", action: viewModel.userSignIn)
 
-                    Button("Register", action: userRegister)
+                    Button("Register", action: viewModel.userRegister)
                 }
                 .buttonStyle(.bordered)
             }
@@ -40,13 +40,6 @@ struct LoginView: View {
         } else {
             CodingKitTabView()
         }
-    }
-
-    private func userSignIn() {
-        isLoggedIn.toggle()
-    }
-
-    private func userRegister() {
     }
 }
 
