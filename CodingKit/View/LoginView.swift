@@ -16,6 +16,8 @@ struct LoginView: View {
     var body: some View {
         if !isLoggedIn {
             VStack {
+                Text("Login")
+                    .font(.title)
                 TextField(
                     "User Name",
                     text: $userName
