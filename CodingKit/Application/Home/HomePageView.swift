@@ -18,7 +18,7 @@ struct HomePageView: View {
                     VStack {
                         Image(systemName: item.iconName)
                             .resizable()
-                            .frame(width: 90, height: 90)
+                            .frame(width: 60, height: 60)
                         Text(item.name)
                             .font(.title2)
                             .fontWeight(.semibold)
