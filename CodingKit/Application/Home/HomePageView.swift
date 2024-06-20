@@ -15,7 +15,7 @@ struct HomePageView: View {
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: columns){
-                    ForEach(HomePageItems.items) { item in
+                    ForEach(HomePageModel.items) { item in
                         VStack {
                             Image(systemName: item.iconName)
                                 .resizable()
