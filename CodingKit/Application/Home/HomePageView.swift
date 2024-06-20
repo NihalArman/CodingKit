@@ -13,17 +13,19 @@ struct HomePageView: View {
 
     var body: some View {
         NavigationView {
-            LazyVGrid(columns: columns){
-                ForEach(HomePageItems.items) { item in
-                    VStack {
-                        Image(systemName: item.iconName)
-                            .resizable()
-                            .frame(width: 60, height: 60)
-                        Text(item.name)
-                            .font(.title2)
-                            .fontWeight(.semibold)
-                            .scaledToFit()
-                            .minimumScaleFactor(0.5)
+            ScrollView {
+                LazyVGrid(columns: columns){
+                    ForEach(HomePageItems.items) { item in
+                        VStack {
+                            Image(systemName: item.iconName)
+                                .resizable()
+                                .frame(width: 60, height: 60)
+                            Text(item.name)
+                                .font(.title2)
+                                .fontWeight(.semibold)
+                                .scaledToFit()
+                                .minimumScaleFactor(0.5)
+                        }
                     }
                 }
             }
