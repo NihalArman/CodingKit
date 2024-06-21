@@ -20,6 +20,7 @@
 		831462452C22DA2F00900CB3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831462442C22DA2F00900CB3 /* LoginViewModel.swift */; };
 		839B643C2C25617600538818 /* HomePageViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B643B2C25617600538818 /* HomePageViewModelTests.swift */; };
 		839B64442C2580BF00538818 /* SessionTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B64432C2580BF00538818 /* SessionTimerView.swift */; };
+		839B64462C25814D00538818 /* RotationTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B64452C25814D00538818 /* RotationTimerView.swift */; };
 		83D8C9052C23115500476558 /* HomePageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8C9042C23115500476558 /* HomePageModel.swift */; };
 		83D8C9072C2412FD00476558 /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8C9062C2412FD00476558 /* HomePageViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		831462442C22DA2F00900CB3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		839B643B2C25617600538818 /* HomePageViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModelTests.swift; sourceTree = "<group>"; };
 		839B64432C2580BF00538818 /* SessionTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTimerView.swift; sourceTree = "<group>"; };
+		839B64452C25814D00538818 /* RotationTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationTimerView.swift; sourceTree = "<group>"; };
 		83D8C9042C23115500476558 /* HomePageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageModel.swift; sourceTree = "<group>"; };
 		83D8C9062C2412FD00476558 /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -229,6 +231,7 @@
 		839B64412C25805800538818 /* RotationTimer */ = {
 			isa = PBXGroup;
 			children = (
+				839B64452C25814D00538818 /* RotationTimerView.swift */,
 			);
 			path = RotationTimer;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 			files = (
 				8314623A2C1A14D300900CB3 /* ProfilePageView.swift in Sources */,
 				831462112C19F91A00900CB3 /* CodingKitTabView.swift in Sources */,
+				839B64462C25814D00538818 /* RotationTimerView.swift in Sources */,
 				831462452C22DA2F00900CB3 /* LoginViewModel.swift in Sources */,
 				8314620F2C19F91A00900CB3 /* CodingKitApp.swift in Sources */,
 				83D8C9072C2412FD00476558 /* HomePageViewModel.swift in Sources */,
