@@ -23,6 +23,7 @@
 		839B64462C25814D00538818 /* RotationTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B64452C25814D00538818 /* RotationTimerView.swift */; };
 		839B64482C2581C000538818 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B64472C2581C000538818 /* NotesView.swift */; };
 		839B644A2C25821800538818 /* TDDChecklistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B64492C25821800538818 /* TDDChecklistView.swift */; };
+		839B644C2C25829400538818 /* MemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B644B2C25829400538818 /* MemoView.swift */; };
 		83D8C9052C23115500476558 /* HomePageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8C9042C23115500476558 /* HomePageModel.swift */; };
 		83D8C9072C2412FD00476558 /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8C9062C2412FD00476558 /* HomePageViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -65,6 +66,7 @@
 		839B64452C25814D00538818 /* RotationTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationTimerView.swift; sourceTree = "<group>"; };
 		839B64472C2581C000538818 /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
 		839B64492C25821800538818 /* TDDChecklistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDChecklistView.swift; sourceTree = "<group>"; };
+		839B644B2C25829400538818 /* MemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoView.swift; sourceTree = "<group>"; };
 		83D8C9042C23115500476558 /* HomePageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageModel.swift; sourceTree = "<group>"; };
 		83D8C9062C2412FD00476558 /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -214,6 +216,7 @@
 		839B643E2C25803200538818 /* Memo */ = {
 			isa = PBXGroup;
 			children = (
+				839B644B2C25829400538818 /* MemoView.swift */,
 			);
 			path = Memo;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				831462112C19F91A00900CB3 /* CodingKitTabView.swift in Sources */,
 				839B64462C25814D00538818 /* RotationTimerView.swift in Sources */,
 				831462452C22DA2F00900CB3 /* LoginViewModel.swift in Sources */,
+				839B644C2C25829400538818 /* MemoView.swift in Sources */,
 				8314620F2C19F91A00900CB3 /* CodingKitApp.swift in Sources */,
 				83D8C9072C2412FD00476558 /* HomePageViewModel.swift in Sources */,
 				839B64482C2581C000538818 /* NotesView.swift in Sources */,
