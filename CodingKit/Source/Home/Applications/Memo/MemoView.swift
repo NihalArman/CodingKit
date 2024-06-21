@@ -12,7 +12,6 @@ struct MemoView: View {
     var body: some View {
         NavigationView {
             Text("Memo Page")
-                .navigationTitle("Memo")
         }
     }
 }

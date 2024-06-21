@@ -12,7 +12,6 @@ struct TDDChecklistView: View {
     var body: some View {
         NavigationView {
             Text("TDD Checklist Page")
-                .navigationTitle("TDD Checklist")
         }
     }
 }

@@ -12,7 +12,6 @@ struct SessionTimerView: View {
     var body: some View {
         NavigationView {
             Text("Session Timer Page")
-                .navigationTitle("Session Timer")
         }
     }
 }

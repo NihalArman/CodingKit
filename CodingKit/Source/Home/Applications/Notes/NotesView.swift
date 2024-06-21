@@ -12,7 +12,6 @@ struct NotesView: View {
     var body: some View {
         NavigationView {
             Text("Notes Page")
-                .navigationTitle("Notes")
         }
     }
 }

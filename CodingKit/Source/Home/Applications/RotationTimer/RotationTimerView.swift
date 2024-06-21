@@ -12,7 +12,6 @@ struct RotationTimerView: View {
     var body: some View {
         NavigationView {
             Text("Rotation Timer Page")
-                .navigationTitle("Rotation Timer")
         }
     }
 }
