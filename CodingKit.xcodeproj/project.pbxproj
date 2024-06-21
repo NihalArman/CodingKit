@@ -183,11 +183,59 @@
 		831462432C22D8E300900CB3 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				839B643D2C25801E00538818 /* Applications */,
 				8314623B2C1A17D200900CB3 /* HomePageView.swift */,
 				83D8C9042C23115500476558 /* HomePageModel.swift */,
 				83D8C9062C2412FD00476558 /* HomePageViewModel.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		839B643D2C25801E00538818 /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				839B64422C25805F00538818 /* SessionTimer */,
+				839B64412C25805800538818 /* RotationTimer */,
+				839B64402C25805000538818 /* Notes */,
+				839B643F2C25803D00538818 /* TDDChecklist */,
+				839B643E2C25803200538818 /* Memo */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		839B643E2C25803200538818 /* Memo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Memo;
+			sourceTree = "<group>";
+		};
+		839B643F2C25803D00538818 /* TDDChecklist */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TDDChecklist;
+			sourceTree = "<group>";
+		};
+		839B64402C25805000538818 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		839B64412C25805800538818 /* RotationTimer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RotationTimer;
+			sourceTree = "<group>";
+		};
+		839B64422C25805F00538818 /* SessionTimer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SessionTimer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
