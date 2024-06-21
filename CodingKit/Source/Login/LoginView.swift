@@ -13,30 +13,36 @@ struct LoginView: View {
 
     var body: some View {
         if !viewModel.isLoggedIn {
-            VStack {
-                Text("Login")
-                    .font(.title)
+            NavigationStack {
+                VStack {
+                    Text("Login")
+                        .font(.title)
 
-                TextField(
-                    "User Name",
-                    text: $viewModel.userName
-                )
-                .disableAutocorrection(true)
+                    TextField(
+                        "User Name",
+                        text: $viewModel.userName
+                    )
+                    .disableAutocorrection(true)
 
-                SecureField(
-                    "Password",
-                    text: $viewModel.password
-                )
-                .disableAutocorrection(true)
+                    SecureField(
+                        "Password",
+                        text: $viewModel.password
+                    )
+                    .disableAutocorrection(true)
 
-                HStack {
-                    Button("Sign In", action: viewModel.userSignIn)
+                    HStack {
+                        Button("Sign In", action: viewModel.userSignIn)
 
-                    Button("Register", action: viewModel.userRegister)
+                        Button("Register", action: viewModel.userRegister)
+                            .navigationDestination(isPresented: $viewModel.isRegisterPageDisplayed) {
+                                RegisterView()
+                                    .navigationTitle("Register")
+                            }
+                    }
+                    .buttonStyle(.bordered)
                 }
-                .buttonStyle(.bordered)
+                .textFieldStyle(.roundedBorder)
             }
-            .textFieldStyle(.roundedBorder)
         } else {
             CodingKitTabView()
         }

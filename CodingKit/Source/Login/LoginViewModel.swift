@@ -11,11 +11,13 @@ final class LoginViewModel: ObservableObject {
     @Published var userName: String = ""
     @Published var password: String = ""
     @Published var isLoggedIn: Bool = false
-    
+    @Published var isRegisterPageDisplayed: Bool = false
+
     func userSignIn() {
         isLoggedIn.toggle()
     }
     
     func userRegister() {
+        isRegisterPageDisplayed.toggle()
     }
 }
