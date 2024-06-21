@@ -14,7 +14,7 @@ struct HomePageView: View {
     let columns: [GridItem] = [GridItem(.flexible()), GridItem(.flexible())]
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ScrollView {
                 LazyVGrid(columns: columns){
                     ForEach(viewModel.homePageListItems) { item in
@@ -28,10 +28,35 @@ struct HomePageView: View {
                                 .scaledToFit()
                                 .minimumScaleFactor(0.5)
                         }
+                        .onTapGesture {
+                            viewModel.itemTappedForDetails(tappedItem: item)
+                        }
                     }
                 }
             }
             .navigationTitle("CodingKit")
+            .navigationDestination(isPresented: $viewModel.isDetailPageDisplayed) {
+                destinationView()
+                    .navigationTitle(viewModel.selectedItem?.name ?? "Error")
+            }
+        }
+    }
+
+    private func destinationView() -> AnyView {
+        let selectedItem = viewModel.selectedItem
+        switch selectedItem?.name {
+        case "Memo": 
+            return AnyView(MemoView())
+        case "TDD Checklist":
+            return AnyView(TDDChecklistView())
+        case "Notes":
+            return AnyView(NotesView())
+        case "Rotation Timer":
+            return AnyView(RotationTimerView())
+        case "Session Timer":
+            return AnyView(SessionTimerView())
+        default:
+            return AnyView(ErrorView())
         }
     }
 }
