@@ -9,7 +9,7 @@ import XCTest
 @testable import CodingKit
 
 final class HomePageViewModelTests: XCTestCase {
-    func testHomePageItemsNames() {
+    func testHomePageItemNames() {
         let viewModel = HomePageViewModel()
         let homePageItems = viewModel.homePageListItems
 
