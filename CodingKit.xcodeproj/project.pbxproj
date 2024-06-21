@@ -109,7 +109,7 @@
 		8314620D2C19F91A00900CB3 /* CodingKit */ = {
 			isa = PBXGroup;
 			children = (
-				8314623F2C22CC7F00900CB3 /* Application */,
+				8314623F2C22CC7F00900CB3 /* Source */,
 				8314620E2C19F91A00900CB3 /* CodingKitApp.swift */,
 				831462122C19F91D00900CB3 /* Assets.xcassets */,
 				831462142C19F91D00900CB3 /* CodingKit.entitlements */,
@@ -144,7 +144,7 @@
 			path = CodingKitUITests;
 			sourceTree = "<group>";
 		};
-		8314623F2C22CC7F00900CB3 /* Application */ = {
+		8314623F2C22CC7F00900CB3 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				831462402C22D89D00900CB3 /* Login */,
@@ -152,7 +152,7 @@
 				831462432C22D8E300900CB3 /* Home */,
 				831462422C22D8D000900CB3 /* ProfilePage */,
 			);
-			path = Application;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		831462402C22D89D00900CB3 /* Login */ = {
