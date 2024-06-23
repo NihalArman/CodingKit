@@ -29,6 +29,8 @@
 		83D8C9052C23115500476558 /* HomePageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8C9042C23115500476558 /* HomePageModel.swift */; };
 		83D8C9072C2412FD00476558 /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8C9062C2412FD00476558 /* HomePageViewModel.swift */; };
 		83ECBE832C280AEE000CC369 /* TDDChecklistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ECBE822C280AEE000CC369 /* TDDChecklistViewModel.swift */; };
+		83ECBE862C280BEA000CC369 /* TDDChecklistItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ECBE852C280BEA000CC369 /* TDDChecklistItemView.swift */; };
+		83ECBE882C280BF6000CC369 /* TDDChecklistItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ECBE872C280BF6000CC369 /* TDDChecklistItemViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		83D8C9042C23115500476558 /* HomePageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageModel.swift; sourceTree = "<group>"; };
 		83D8C9062C2412FD00476558 /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
 		83ECBE822C280AEE000CC369 /* TDDChecklistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDChecklistViewModel.swift; sourceTree = "<group>"; };
+		83ECBE852C280BEA000CC369 /* TDDChecklistItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDChecklistItemView.swift; sourceTree = "<group>"; };
+		83ECBE872C280BF6000CC369 /* TDDChecklistItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDChecklistItemViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +236,7 @@
 		839B643F2C25803D00538818 /* TDDChecklist */ = {
 			isa = PBXGroup;
 			children = (
+				83ECBE842C280BA5000CC369 /* TDDChecklistItem */,
 				839B64492C25821800538818 /* TDDChecklistView.swift */,
 				83ECBE822C280AEE000CC369 /* TDDChecklistViewModel.swift */,
 			);
@@ -276,6 +281,15 @@
 				839B64512C25D38C00538818 /* RegisterView.swift */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		83ECBE842C280BA5000CC369 /* TDDChecklistItem */ = {
+			isa = PBXGroup;
+			children = (
+				83ECBE852C280BEA000CC369 /* TDDChecklistItemView.swift */,
+				83ECBE872C280BF6000CC369 /* TDDChecklistItemViewModel.swift */,
+			);
+			path = TDDChecklistItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,6 +425,7 @@
 				8314623A2C1A14D300900CB3 /* ProfilePageView.swift in Sources */,
 				831462112C19F91A00900CB3 /* CodingKitTabView.swift in Sources */,
 				839B64462C25814D00538818 /* RotationTimerView.swift in Sources */,
+				83ECBE882C280BF6000CC369 /* TDDChecklistItemViewModel.swift in Sources */,
 				831462452C22DA2F00900CB3 /* LoginViewModel.swift in Sources */,
 				839B644C2C25829400538818 /* MemoView.swift in Sources */,
 				8314620F2C19F91A00900CB3 /* CodingKitApp.swift in Sources */,
@@ -424,6 +439,7 @@
 				839B644F2C25D0A200538818 /* ErrorView.swift in Sources */,
 				839B644A2C25821800538818 /* TDDChecklistView.swift in Sources */,
 				8314623C2C1A17D200900CB3 /* HomePageView.swift in Sources */,
+				83ECBE862C280BEA000CC369 /* TDDChecklistItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
