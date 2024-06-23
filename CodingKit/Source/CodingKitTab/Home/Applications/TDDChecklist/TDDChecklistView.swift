@@ -11,7 +11,18 @@ import SwiftUI
 struct TDDChecklistView: View {
     var body: some View {
         NavigationView {
-            Text("TDD Checklist Page")
+            VStack {
+                Text("TDD Checklist Page")
+            }
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("Add Item")
+                }
+                ToolbarItem(placement: .primaryAction) {
+                    Button("AddButton", systemImage: "plus") {
+                    }
+                }
+            }
         }
     }
 }
