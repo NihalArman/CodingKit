@@ -9,6 +9,8 @@ import Foundation
 import SwiftUI
 
 struct TDDChecklistView: View {
+    @StateObject var viewModel = TDDChecklistViewModel()
+
     var body: some View {
         NavigationView {
             VStack {
@@ -20,6 +22,10 @@ struct TDDChecklistView: View {
                 }
                 ToolbarItem(placement: .primaryAction) {
                     Button("AddButton", systemImage: "plus") {
+                        viewModel.displayNewItemView()
+                    }
+                    .sheet(isPresented: $viewModel.showNewItemPopUp) {
+                        TDDChecklistNewItemView()
                     }
                 }
             }

@@ -8,6 +8,12 @@
 import Foundation
 
 final class TDDChecklistViewModel: ObservableObject {
+    @Published var showNewItemPopUp: Bool = false
+
     init() {
+    }
+
+    func displayNewItemView() {
+        showNewItemPopUp.toggle()
     }
 }
