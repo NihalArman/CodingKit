@@ -13,8 +13,5 @@ final class TDDChecklistNewItemViewModel: ObservableObject {
 
     func saveData() {
     }
-
-    func cancelData() {
-    }
 }
 

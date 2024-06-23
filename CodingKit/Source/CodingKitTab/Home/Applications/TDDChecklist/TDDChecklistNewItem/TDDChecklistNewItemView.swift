@@ -10,6 +10,7 @@ import SwiftUI
 
 struct TDDChecklistNewItemView: View {
     @StateObject var viewModel = TDDChecklistNewItemViewModel()
+    @Environment(\.dismiss) private var dismiss
 
     var body: some View {
         NavigationView {
@@ -21,7 +22,9 @@ struct TDDChecklistNewItemView: View {
                 }
                 HStack {
                     Button("Save", action: viewModel.saveData)
-                    Button("Cancel", action: viewModel.cancelData)
+                    Button("Cancel") {
+                        dismiss ()
+                    }
                 }
                 .buttonStyle(.bordered)
             }
