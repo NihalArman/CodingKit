@@ -164,8 +164,6 @@
 				831462402C22D89D00900CB3 /* Login */,
 				831462412C22D8B000900CB3 /* CodingKitTab */,
 				839B644D2C25CFCF00538818 /* Error */,
-				831462432C22D8E300900CB3 /* Home */,
-				831462422C22D8D000900CB3 /* ProfilePage */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -183,6 +181,8 @@
 		831462412C22D8B000900CB3 /* CodingKitTab */ = {
 			isa = PBXGroup;
 			children = (
+				831462432C22D8E300900CB3 /* Home */,
+				831462422C22D8D000900CB3 /* ProfilePage */,
 				831462102C19F91A00900CB3 /* CodingKitTabView.swift */,
 			);
 			path = CodingKitTab;
