@@ -28,6 +28,7 @@
 		839B64522C25D38C00538818 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B64512C25D38C00538818 /* RegisterView.swift */; };
 		83D8C9052C23115500476558 /* HomePageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8C9042C23115500476558 /* HomePageModel.swift */; };
 		83D8C9072C2412FD00476558 /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8C9062C2412FD00476558 /* HomePageViewModel.swift */; };
+		83ECBE832C280AEE000CC369 /* TDDChecklistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ECBE822C280AEE000CC369 /* TDDChecklistViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		839B64512C25D38C00538818 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		83D8C9042C23115500476558 /* HomePageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageModel.swift; sourceTree = "<group>"; };
 		83D8C9062C2412FD00476558 /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
+		83ECBE822C280AEE000CC369 /* TDDChecklistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDChecklistViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				839B64492C25821800538818 /* TDDChecklistView.swift */,
+				83ECBE822C280AEE000CC369 /* TDDChecklistViewModel.swift */,
 			);
 			path = TDDChecklist;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				8314620F2C19F91A00900CB3 /* CodingKitApp.swift in Sources */,
 				839B64522C25D38C00538818 /* RegisterView.swift in Sources */,
 				83D8C9072C2412FD00476558 /* HomePageViewModel.swift in Sources */,
+				83ECBE832C280AEE000CC369 /* TDDChecklistViewModel.swift in Sources */,
 				839B64482C2581C000538818 /* NotesView.swift in Sources */,
 				8314623E2C1AE54300900CB3 /* LoginView.swift in Sources */,
 				83D8C9052C23115500476558 /* HomePageModel.swift in Sources */,
