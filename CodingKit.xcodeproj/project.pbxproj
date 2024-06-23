@@ -33,6 +33,7 @@
 		83ECBE882C280BF6000CC369 /* TDDChecklistItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ECBE872C280BF6000CC369 /* TDDChecklistItemViewModel.swift */; };
 		83ECBE8B2C280F0F000CC369 /* TDDChecklistNewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ECBE8A2C280F0F000CC369 /* TDDChecklistNewItemView.swift */; };
 		83ECBE8D2C280F34000CC369 /* TDDChecklistNewItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ECBE8C2C280F34000CC369 /* TDDChecklistNewItemViewModel.swift */; };
+		83ECBE8F2C287FFE000CC369 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83ECBE8E2C287FFE000CC369 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		83ECBE872C280BF6000CC369 /* TDDChecklistItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDChecklistItemViewModel.swift; sourceTree = "<group>"; };
 		83ECBE8A2C280F0F000CC369 /* TDDChecklistNewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDChecklistNewItemView.swift; sourceTree = "<group>"; };
 		83ECBE8C2C280F34000CC369 /* TDDChecklistNewItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDChecklistNewItemViewModel.swift; sourceTree = "<group>"; };
+		83ECBE8E2C287FFE000CC369 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			children = (
 				8314623F2C22CC7F00900CB3 /* Source */,
 				8314620E2C19F91A00900CB3 /* CodingKitApp.swift */,
+				83ECBE8E2C287FFE000CC369 /* GoogleService-Info.plist */,
 				831462122C19F91D00900CB3 /* Assets.xcassets */,
 				831462142C19F91D00900CB3 /* CodingKit.entitlements */,
 				831462152C19F91D00900CB3 /* Preview Content */,
@@ -412,6 +415,7 @@
 			files = (
 				831462172C19F91D00900CB3 /* Preview Assets.xcassets in Resources */,
 				831462132C19F91D00900CB3 /* Assets.xcassets in Resources */,
+				83ECBE8F2C287FFE000CC369 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
