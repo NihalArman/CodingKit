@@ -20,7 +20,8 @@ struct RegisterView: View {
                     TextField("Last Name", text: $viewModel.lastName)
                     TextField("Email", text: $viewModel.email)
                     SecureField("Pasword", text: $viewModel.password)
-                        .disableAutocorrection(true)
+                        .autocorrectionDisabled()
+                        .textInputAutocapitalization(.none)
                 }
 
                 HStack {

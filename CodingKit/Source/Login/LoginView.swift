@@ -28,7 +28,8 @@ struct LoginView: View {
                         "Password",
                         text: $viewModel.password
                     )
-                    .disableAutocorrection(true)
+                    .autocorrectionDisabled()
+                    .textInputAutocapitalization(.none)
 
                     HStack {
                         Button("Sign In", action: viewModel.userSignIn)
