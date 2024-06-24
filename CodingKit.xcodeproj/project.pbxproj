@@ -26,6 +26,7 @@
 		839B644C2C25829400538818 /* MemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B644B2C25829400538818 /* MemoView.swift */; };
 		839B644F2C25D0A200538818 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B644E2C25D0A200538818 /* ErrorView.swift */; };
 		839B64522C25D38C00538818 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B64512C25D38C00538818 /* RegisterView.swift */; };
+		839EA71D2C29C59500BEF004 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839EA71C2C29C59500BEF004 /* RegisterViewModel.swift */; };
 		83D8C9052C23115500476558 /* HomePageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8C9042C23115500476558 /* HomePageModel.swift */; };
 		83D8C9072C2412FD00476558 /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8C9062C2412FD00476558 /* HomePageViewModel.swift */; };
 		83ECBE832C280AEE000CC369 /* TDDChecklistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ECBE822C280AEE000CC369 /* TDDChecklistViewModel.swift */; };
@@ -80,6 +81,7 @@
 		839B644B2C25829400538818 /* MemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoView.swift; sourceTree = "<group>"; };
 		839B644E2C25D0A200538818 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		839B64512C25D38C00538818 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		839EA71C2C29C59500BEF004 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		83D8C9042C23115500476558 /* HomePageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageModel.swift; sourceTree = "<group>"; };
 		83D8C9062C2412FD00476558 /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
 		83ECBE822C280AEE000CC369 /* TDDChecklistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDChecklistViewModel.swift; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				839B64512C25D38C00538818 /* RegisterView.swift */,
+				839EA71C2C29C59500BEF004 /* RegisterViewModel.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				8314623E2C1AE54300900CB3 /* LoginView.swift in Sources */,
 				83D8C9052C23115500476558 /* HomePageModel.swift in Sources */,
 				839B64442C2580BF00538818 /* SessionTimerView.swift in Sources */,
+				839EA71D2C29C59500BEF004 /* RegisterViewModel.swift in Sources */,
 				839B644F2C25D0A200538818 /* ErrorView.swift in Sources */,
 				839B644A2C25821800538818 /* TDDChecklistView.swift in Sources */,
 				8314623C2C1A17D200900CB3 /* HomePageView.swift in Sources */,
