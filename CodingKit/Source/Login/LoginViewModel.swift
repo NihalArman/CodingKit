@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import FirebaseAuth
 
 final class LoginViewModel: ObservableObject {
     @Published var email: String = ""
@@ -18,6 +19,8 @@ final class LoginViewModel: ObservableObject {
         guard validateEmailAndPassword() else {
             return
         }
+        
+        Auth.auth().signIn(withEmail: email, password: password)
         isLoggedIn.toggle()
     }
     
