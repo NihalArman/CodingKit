@@ -16,11 +16,13 @@ final class LoginViewModelTests: XCTestCase {
         XCTAssertFalse(viewModel.isLoggedIn)
     }
 
-    func testUserLogsInAfterSignIn() {
+    func testLogInFailsIfEmailisEmpty() {
         let viewModel = LoginViewModel()
+        viewModel.email = ""
+        viewModel.password = "something"
 
         viewModel.userSignIn()
 
-        XCTAssertTrue(viewModel.isLoggedIn)
+        XCTAssertFalse(viewModel.isLoggedIn)
     }
 }
