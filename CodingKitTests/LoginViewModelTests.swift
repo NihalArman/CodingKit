@@ -36,4 +36,13 @@ final class LoginViewModelTests: XCTestCase {
         XCTAssertFalse(viewModel.isLoggedIn)
     }
 
+    func testLogInSucceedsIfEmailAndPasswordisGiven() {
+        let viewModel = LoginViewModel()
+        viewModel.email = "something@abc.com"
+        viewModel.password = "something"
+
+        viewModel.userSignIn()
+
+        XCTAssertTrue(viewModel.isLoggedIn)
+    }
 }
