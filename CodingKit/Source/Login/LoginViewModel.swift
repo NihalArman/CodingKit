@@ -14,6 +14,9 @@ final class LoginViewModel: ObservableObject {
     @Published var isRegisterPageDisplayed: Bool = false
 
     func userSignIn() {
+        guard !email.trimmingCharacters(in: .whitespaces).isEmpty && !password.trimmingCharacters(in: .whitespaces).isEmpty else {
+            return
+        }
         isLoggedIn.toggle()
     }
     
