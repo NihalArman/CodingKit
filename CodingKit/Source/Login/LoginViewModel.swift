@@ -12,9 +12,11 @@ final class LoginViewModel: ObservableObject {
     @Published var password: String = ""
     @Published var isLoggedIn: Bool = false
     @Published var isRegisterPageDisplayed: Bool = false
+    @Published var errorMessage = ""
 
     func userSignIn() {
         guard !email.trimmingCharacters(in: .whitespaces).isEmpty && !password.trimmingCharacters(in: .whitespaces).isEmpty else {
+            errorMessage = "Please fill in both fields"
             return
         }
         isLoggedIn.toggle()

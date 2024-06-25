@@ -31,6 +31,11 @@ struct LoginView: View {
                     .autocorrectionDisabled()
                     .textInputAutocapitalization(.none)
 
+                    if !viewModel.errorMessage.isEmpty {
+                        Text(viewModel.errorMessage)
+                            .foregroundStyle(.red)
+                    }
+
                     HStack {
                         Button("Sign In", action: viewModel.userSignIn)
 
