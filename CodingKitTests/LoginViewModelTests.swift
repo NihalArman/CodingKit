@@ -24,6 +24,7 @@ final class LoginViewModelTests: XCTestCase {
         viewModel.userSignIn()
 
         XCTAssertFalse(viewModel.isLoggedIn)
+        XCTAssertEqual(viewModel.errorMessage, "Please fill in both fields")
     }
 
     func testLogInFailsIfPasswordisEmpty() {
@@ -34,6 +35,7 @@ final class LoginViewModelTests: XCTestCase {
         viewModel.userSignIn()
 
         XCTAssertFalse(viewModel.isLoggedIn)
+        XCTAssertEqual(viewModel.errorMessage, "Please fill in both fields")
     }
 
     func testLogInSucceedsIfEmailAndPasswordisGiven() {
