@@ -15,19 +15,27 @@ final class LoginViewModel: ObservableObject {
     @Published var errorMessage = ""
 
     func userSignIn() {
-        guard !email.trimmingCharacters(in: .whitespaces).isEmpty && !password.trimmingCharacters(in: .whitespaces).isEmpty else {
-            errorMessage = "Please fill in both fields"
+        guard validateEmailAndPassword() else {
             return
         }
-        guard email.contains("@") && email.contains(".") else {
-            errorMessage = "Please enter valid email address"
-            return
-        }
-
         isLoggedIn.toggle()
     }
     
     func userRegister() {
         isRegisterPageDisplayed.toggle()
+    }
+
+    // MARK: - Helpers
+    private func validateEmailAndPassword() -> Bool {
+        guard !email.trimmingCharacters(in: .whitespaces).isEmpty && !password.trimmingCharacters(in: .whitespaces).isEmpty else {
+            errorMessage = "Please fill in both fields"
+            return false
+        }
+        guard email.contains("@") && email.contains(".") else {
+            errorMessage = "Please enter valid email address"
+            return false
+        }
+
+        return true
     }
 }
