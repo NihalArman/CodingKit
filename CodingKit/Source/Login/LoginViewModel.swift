@@ -8,7 +8,7 @@
 import Foundation
 
 final class LoginViewModel: ObservableObject {
-    @Published var userName: String = ""
+    @Published var email: String = ""
     @Published var password: String = ""
     @Published var isLoggedIn: Bool = false
     @Published var isRegisterPageDisplayed: Bool = false

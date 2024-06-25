@@ -19,8 +19,8 @@ struct LoginView: View {
                         .font(.title)
 
                     TextField(
-                        "User Name",
-                        text: $viewModel.userName
+                        "Email Address",
+                        text: $viewModel.email
                     )
                     .disableAutocorrection(true)
 
@@ -48,8 +48,4 @@ struct LoginView: View {
             CodingKitTabView()
         }
     }
-}
-
-#Preview {
-    LoginView()
 }
