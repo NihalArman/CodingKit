@@ -19,6 +19,11 @@ final class LoginViewModel: ObservableObject {
             errorMessage = "Please fill in both fields"
             return
         }
+        guard email.contains("@") && email.contains(".") else {
+            errorMessage = "Please enter valid email address"
+            return
+        }
+
         isLoggedIn.toggle()
     }
     
