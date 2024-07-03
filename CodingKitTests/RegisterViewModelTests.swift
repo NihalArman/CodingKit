@@ -9,6 +9,8 @@ import XCTest
 @testable import CodingKit
 
 final class RegisterViewModelTests: XCTestCase {
+    let missingFieldErrorMessage = "Please fill all the fields"
+
     func testUserIsNotRegisterByDefault() {
         let viewModel = RegisterViewModel()
 
@@ -25,7 +27,7 @@ final class RegisterViewModelTests: XCTestCase {
         
         viewModel.registerUser()
 
-        XCTAssertEqual(viewModel.errorMessage, "Please fill all the fields")
+        XCTAssertEqual(viewModel.errorMessage, missingFieldErrorMessage)
     }
 
     func testRegistrationFailsIfLastNameIsEmpty() {
@@ -38,7 +40,7 @@ final class RegisterViewModelTests: XCTestCase {
 
         viewModel.registerUser()
 
-        XCTAssertEqual(viewModel.errorMessage, "Please fill all the fields")
+        XCTAssertEqual(viewModel.errorMessage, missingFieldErrorMessage)
     }
 
     func testRegistrationFailsIfEmailIsEmpty() {
@@ -51,7 +53,7 @@ final class RegisterViewModelTests: XCTestCase {
 
         viewModel.registerUser()
 
-        XCTAssertEqual(viewModel.errorMessage, "Please fill all the fields")
+        XCTAssertEqual(viewModel.errorMessage, missingFieldErrorMessage)
     }
 
     func testRegistrationFailsIfPasswordIsEmpty() {
@@ -64,6 +66,6 @@ final class RegisterViewModelTests: XCTestCase {
 
         viewModel.registerUser()
 
-        XCTAssertEqual(viewModel.errorMessage, "Please fill all the fields")
+        XCTAssertEqual(viewModel.errorMessage, missingFieldErrorMessage)
     }
 }
