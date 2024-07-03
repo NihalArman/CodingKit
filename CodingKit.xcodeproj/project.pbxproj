@@ -18,6 +18,7 @@
 		8314623C2C1A17D200900CB3 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314623B2C1A17D200900CB3 /* HomePageView.swift */; };
 		8314623E2C1AE54300900CB3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314623D2C1AE54300900CB3 /* LoginView.swift */; };
 		831462452C22DA2F00900CB3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831462442C22DA2F00900CB3 /* LoginViewModel.swift */; };
+		8338B9302C357C62002233F2 /* RegisterViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8338B92F2C357C62002233F2 /* RegisterViewModelTests.swift */; };
 		839B643C2C25617600538818 /* HomePageViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B643B2C25617600538818 /* HomePageViewModelTests.swift */; };
 		839B64442C2580BF00538818 /* SessionTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B64432C2580BF00538818 /* SessionTimerView.swift */; };
 		839B64462C25814D00538818 /* RotationTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B64452C25814D00538818 /* RotationTimerView.swift */; };
@@ -73,6 +74,7 @@
 		8314623B2C1A17D200900CB3 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		8314623D2C1AE54300900CB3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		831462442C22DA2F00900CB3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		8338B92F2C357C62002233F2 /* RegisterViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModelTests.swift; sourceTree = "<group>"; };
 		839B643B2C25617600538818 /* HomePageViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModelTests.swift; sourceTree = "<group>"; };
 		839B64432C2580BF00538818 /* SessionTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTimerView.swift; sourceTree = "<group>"; };
 		839B64452C25814D00538818 /* RotationTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationTimerView.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			children = (
 				831462202C19F91D00900CB3 /* LoginViewModelTests.swift */,
 				839B643B2C25617600538818 /* HomePageViewModelTests.swift */,
+				8338B92F2C357C62002233F2 /* RegisterViewModelTests.swift */,
 			);
 			path = CodingKitTests;
 			sourceTree = "<group>";
@@ -493,6 +496,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8338B9302C357C62002233F2 /* RegisterViewModelTests.swift in Sources */,
 				839B643C2C25617600538818 /* HomePageViewModelTests.swift in Sources */,
 				831462212C19F91D00900CB3 /* LoginViewModelTests.swift in Sources */,
 			);
