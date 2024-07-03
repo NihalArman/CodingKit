@@ -19,7 +19,6 @@ final class RegisterViewModelTests: XCTestCase {
 
     func testRegistrationFailsIfFirstNameIsEmpty() {
         let viewModel = RegisterViewModel()
-
         viewModel.firstName = ""
         viewModel.lastName = "Nihal"
         viewModel.email = "abc@something.com"
@@ -32,7 +31,6 @@ final class RegisterViewModelTests: XCTestCase {
 
     func testRegistrationFailsIfLastNameIsEmpty() {
         let viewModel = RegisterViewModel()
-
         viewModel.firstName = "Arman"
         viewModel.lastName = ""
         viewModel.email = "abc@something.com"
@@ -45,7 +43,6 @@ final class RegisterViewModelTests: XCTestCase {
 
     func testRegistrationFailsIfEmailIsEmpty() {
         let viewModel = RegisterViewModel()
-
         viewModel.firstName = "Arman"
         viewModel.lastName = "Nihal"
         viewModel.email = ""
@@ -58,7 +55,6 @@ final class RegisterViewModelTests: XCTestCase {
 
     func testRegistrationFailsIfPasswordIsEmpty() {
         let viewModel = RegisterViewModel()
-
         viewModel.firstName = "Arman"
         viewModel.lastName = "Nihal"
         viewModel.email = "abc@something.com"
