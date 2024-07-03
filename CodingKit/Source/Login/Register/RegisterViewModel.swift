@@ -27,6 +27,8 @@ final class RegisterViewModel: ObservableObject {
 
     // MARK: - Helpers
     private func validateUserInput() -> Bool {
+        errorMessage = ""
+
         guard !firstName.trimmingCharacters(in: .whitespaces).isEmpty,
               !lastName.trimmingCharacters(in: .whitespaces).isEmpty,
               !email.trimmingCharacters(in: .whitespaces).isEmpty,
