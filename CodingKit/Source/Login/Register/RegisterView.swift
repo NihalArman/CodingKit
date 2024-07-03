@@ -24,6 +24,11 @@ struct RegisterView: View {
                         .textInputAutocapitalization(.none)
                 }
 
+                if !viewModel.errorMessage.isEmpty {
+                    Text(viewModel.errorMessage)
+                        .foregroundStyle(.red)
+                }
+
                 HStack {
                     Button("Register", action: viewModel.registerUser)
                     Button("Cancel") {
