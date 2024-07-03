@@ -30,6 +30,8 @@ final class LoginViewModel: ObservableObject {
 
     // MARK: - Helpers
     private func validateEmailAndPassword() -> Bool {
+        errorMessage = ""
+
         guard !email.trimmingCharacters(in: .whitespaces).isEmpty && !password.trimmingCharacters(in: .whitespaces).isEmpty else {
             errorMessage = "Please fill in both fields"
             return false
