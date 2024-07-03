@@ -14,4 +14,56 @@ final class RegisterViewModelTests: XCTestCase {
 
         XCTAssertFalse(viewModel.isRegistrationSuccessful)
     }
+
+    func testRegistrationFailsIfFirstNameIsEmpty() {
+        let viewModel = RegisterViewModel()
+
+        viewModel.firstName = ""
+        viewModel.lastName = "Nihal"
+        viewModel.email = "abc@something.com"
+        viewModel.password = "something"
+        
+        viewModel.registerUser()
+
+        XCTAssertEqual(viewModel.errorMessage, "Please fill all the fields")
+    }
+
+    func testRegistrationFailsIfLastNameIsEmpty() {
+        let viewModel = RegisterViewModel()
+
+        viewModel.firstName = "Arman"
+        viewModel.lastName = ""
+        viewModel.email = "abc@something.com"
+        viewModel.password = "something"
+
+        viewModel.registerUser()
+
+        XCTAssertEqual(viewModel.errorMessage, "Please fill all the fields")
+    }
+
+    func testRegistrationFailsIfEmailIsEmpty() {
+        let viewModel = RegisterViewModel()
+
+        viewModel.firstName = "Arman"
+        viewModel.lastName = "Nihal"
+        viewModel.email = ""
+        viewModel.password = "something"
+
+        viewModel.registerUser()
+
+        XCTAssertEqual(viewModel.errorMessage, "Please fill all the fields")
+    }
+
+    func testRegistrationFailsIfPasswordIsEmpty() {
+        let viewModel = RegisterViewModel()
+
+        viewModel.firstName = "Arman"
+        viewModel.lastName = "Nihal"
+        viewModel.email = "abc@something.com"
+        viewModel.password = ""
+
+        viewModel.registerUser()
+
+        XCTAssertEqual(viewModel.errorMessage, "Please fill all the fields")
+    }
 }

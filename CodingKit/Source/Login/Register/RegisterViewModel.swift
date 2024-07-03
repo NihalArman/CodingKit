@@ -13,11 +13,27 @@ final class RegisterViewModel: ObservableObject {
     @Published var email: String = ""
     @Published var password: String = ""
     @Published var isRegistrationSuccessful: Bool = false
+    @Published var errorMessage = ""
 
     init() {
     }
 
     func registerUser() {
+        guard validateUserInput() else {
+            return
+        }
         isRegistrationSuccessful.toggle()
+    }
+
+    // MARK: - Helpers
+    private func validateUserInput() -> Bool {
+        guard !firstName.trimmingCharacters(in: .whitespaces).isEmpty,
+              !lastName.trimmingCharacters(in: .whitespaces).isEmpty,
+              !email.trimmingCharacters(in: .whitespaces).isEmpty,
+              !password.trimmingCharacters(in: .whitespaces).isEmpty else {
+            errorMessage = "Please fill all the fields"
+            return false
+        }
+        return true
     }
 }
