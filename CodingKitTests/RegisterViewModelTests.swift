@@ -68,4 +68,16 @@ final class RegisterViewModelTests: XCTestCase {
 
         XCTAssertEqual(viewModel.errorMessage, missingFieldErrorMessage)
     }
+
+    func testRegistrationInFailsIfEmailIsInvalid() {
+        let viewModel = RegisterViewModel()
+        viewModel.firstName = "Arman"
+        viewModel.lastName = "Nihal"
+        viewModel.email = "abc.com"
+        viewModel.password = "something"
+
+        viewModel.registerUser()
+
+        XCTAssertEqual(viewModel.errorMessage, "Please enter valid email address")
+    }
 }

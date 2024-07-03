@@ -34,6 +34,11 @@ final class RegisterViewModel: ObservableObject {
             errorMessage = "Please fill all the fields"
             return false
         }
+
+        guard email.contains("@") && email.contains(".") else {
+            errorMessage = "Please enter valid email address"
+            return false
+        }
         return true
     }
 }
