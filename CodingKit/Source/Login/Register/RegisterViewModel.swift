@@ -41,6 +41,11 @@ final class RegisterViewModel: ObservableObject {
             errorMessage = "Please enter valid email address"
             return false
         }
+
+        guard password.count >= 5 else {
+            errorMessage = "Password should be minimum 5 characters or more"
+            return false
+        }
         return true
     }
 }
