@@ -27,6 +27,7 @@ struct RegisterView: View {
                 if !viewModel.errorMessage.isEmpty {
                     Text(viewModel.errorMessage)
                         .foregroundStyle(.red)
+                        .padding(.all)
                 }
 
                 HStack {
