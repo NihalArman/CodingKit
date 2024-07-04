@@ -11,6 +11,7 @@ import XCTest
 final class RegisterViewModelTests: XCTestCase {
     let missingFieldErrorMessage = "Please fill all the fields"
     let invalidPasswordErrorMessage = "Password should be minimum 5 characters or more"
+    let invalidEmailErrorMessage = "Please enter valid email address"
 
     func testUserIsNotRegisterByDefault() {
         let viewModel = RegisterViewModel()
@@ -75,7 +76,7 @@ final class RegisterViewModelTests: XCTestCase {
 
         viewModel.registerUser()
 
-        XCTAssertEqual(viewModel.errorMessage, "Please enter valid email address")
+        XCTAssertEqual(viewModel.errorMessage, invalidEmailErrorMessage)
     }
 
     func testInvalidPasswordGivesError() {
